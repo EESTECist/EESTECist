@@ -25,7 +25,7 @@ SECRET_KEY = '9mro@cbg%xp@6xsjspao7jlx9y_wd27y!y!b9uepx7*gd4$be&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.eestec.istanbul']
+ALLOWED_HOSTS = ['.eestec.istanbul', '127.0.0.1', 'localhost']
 
 # Application definition
 
