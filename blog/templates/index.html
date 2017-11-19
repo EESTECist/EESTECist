@@ -3,23 +3,21 @@
 
 {% block body %}
     <div class="container">
-        <div class="row">
-            <div class="card-deck">
-                {% for post in object_list %}
-                    <div class="col-md-3">
-                        <div class="card">
-                            <a href="{% url "post" id=post.id %}"><img class="card-img-top full-width" src="{% static "img/DGtech.jpg" %}" alt="{{ post.title }}"></a>
-                            <div class="card-block">
-                                <h4 class="card-title">{{ post.title }}</h4>
-                                <p class="card-text">{{ post.body }}</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Last updated 3 mins ago</small>
-                            </div>
+        <div class="card-deck">
+            {% for post in object_list %}
+                <div class="col-3">
+                    <div class="card">
+                        <a href="{% url "post" id=post.id %}"><img class="card-img-top full-width" src="{% static "img/DGtech.jpg" %}" alt="{{ post.title }}"></a>
+                        <div class="card-block">
+                            <h4 class="card-title">{{ post.title }}</h4>
+                            <p class="card-text">{{ post.body }}</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
                         </div>
                     </div>
-                {% endfor %}
-            </div>
+                </div>
+            {% endfor %}
         </div>
     </div>
 {% endblock %}

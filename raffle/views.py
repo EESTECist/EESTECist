@@ -1,9 +1,14 @@
 from django.views import generic
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 from raffle.models import Entry
 
-class IndexView(generic.ListView):
-    model = Entry
+
+def IndexView(request):
+    return HttpResponse("<h1>Raffle</h1>")
+
+
+def participants(request):
+    return render(request, "participants.html")
 
 
 def privacy(request):
