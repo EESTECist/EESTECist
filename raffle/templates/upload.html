@@ -1,9 +1,18 @@
 {% extends "theme.html" %}
 
+{% load static %}
+
 {% block body %}
     <div class="container">
-        <div class="row">
-            <div class="col-8 offset-2">
+        <div class="row center">
+            <div class="col-6">
+                <form enctype="multipart/form-data" action="/" method="POST">
+                    {% csrf_token %}
+                    {{ entry_form.as_p }}
+                    <input type="submit" value="Save">
+                </form>
+            </div>
+            <div class="col-6">
                 <form enctype="multipart/form-data" action="." method="POST">
                     {% csrf_token %}
                     {{ form.as_p }}

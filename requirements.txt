@@ -1,2 +1,4 @@
 Django
 Pillow
+instagram-scraper
+selenium

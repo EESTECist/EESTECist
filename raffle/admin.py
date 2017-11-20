@@ -1,3 +1,6 @@
 from django.contrib import admin
+from raffle.models import Entry, TextFile
 
-# Register your models here.
+
+admin.site.register(Entry)
+admin.site.register(TextFile)

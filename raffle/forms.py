@@ -5,7 +5,7 @@ from raffle import models
 class EntryForm(forms.ModelForm):
     class Meta:
         model = models.Entry
-        fields = ["name", "image"]
+        fields = ["name", "img_url"]
 
 
 class TextFileForm(forms.ModelForm):

@@ -1,20 +1,20 @@
 {% extends "theme.html" %}
 
+{% load static %}
+
 {% block body %}
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <form action="." method="POST">
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                    <input type="submit" value="Save">
-                </form>
-            </div>
-        </div>
-        <div class="row">
+        <div class="card-columns">
             {% for entry in entries %}
-                <div class="col-4">
-                    <h1>{{ entry.name }}</h1>
+                <div class="card">
+                    {% if entry.img_url %}
+                        <img class="card-img-top img-fluid" src="{{ entry.img_url }}" alt="(Image)">
+                    {% else %}
+                        <img class="card-img-top img-fluid" src="{% static "img/eestecist.jpeg" %}" alt="(Image)">
+                    {% endif %}
+                    <div class="card-block">
+                        <h4 class="card-title">{{ entry.name }}</h4>
+                    </div>
                 </div>
             {% endfor %}
         </div>
