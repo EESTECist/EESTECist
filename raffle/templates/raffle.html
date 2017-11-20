@@ -1,0 +1,23 @@
+{% extends "theme.html" %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form action="." method="POST">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <input type="submit" value="Save">
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            {% for entry in entries %}
+                <div class="col-4">
+                    <h1>{{ entry.name }}</h1>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <script src="https://app.dialogfeed.com/wc/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+{% endblock %}
