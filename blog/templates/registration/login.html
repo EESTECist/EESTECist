@@ -3,11 +3,12 @@
 {% block body %}
     <div class="container">
         <div class="row">
-            <div class="col-8 offset-2">
-                <form enctype="multipart/form-data" action="." method="POST">
+            <div class="col-6 offset-3 card-bg">
+                <form action="." method="POST">
                     {% csrf_token %}
+                    <input type="hidden" name="next" value="{{ next }}">
                     {{ form.as_p }}
-                    <input type="submit" value="Save">
+                    <button class="btn btn-primary">Login</button>
                 </form>
             </div>
         </div>

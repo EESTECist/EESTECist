@@ -1,7 +1,8 @@
 from django.views import generic
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponseRedirect
 from raffle.models import Entry
 from raffle.forms import TextFileForm
+from django.contrib.auth.decorators import user_passes_test
 
 
 class IndexView(generic.CreateView):
@@ -16,14 +17,14 @@ class IndexView(generic.CreateView):
         return context
 
 
+@user_passes_test(lambda u: u.is_superuser)
 def upload_file(request):
     if request.method == 'POST':
         form = TextFileForm(request.POST, request.FILES)
         if form.is_valid():
-            with open(request.FILES['text_file'], "r", encoding="utf-8") as lines:
-                for line in lines:
-                    new = Entry(name=line)
-                    new.save()
+            for line in request.FILES["text_file"]:
+                new = Entry(name=line)
+                new.save()
             return HttpResponseRedirect('/')
     else:
         form = TextFileForm()
