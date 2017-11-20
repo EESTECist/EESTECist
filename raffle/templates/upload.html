@@ -1,0 +1,15 @@
+{% extends "theme.html" %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <form action="." method="POST">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <input type="submit" value="Save">
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
