@@ -25,7 +25,7 @@ def upload_file(request):
     if request.method == 'POST':
         form = TextFileForm(request.POST, request.FILES)
         if form.is_valid():
-            scraper = InstagramScraper(usernames=[line.rstrip().decode("utf-8") for line in request.FILES["text_file"]], media_metadata=True, media_types=[], maximum=10, destination=MEDIA_ROOT, retain_username=False)
+            scraper = InstagramScraper(usernames=[line.rstrip().decode("utf-8") for line in request.FILES["text_file"]], media_metadata=True, media_types=[], maximum=5, destination=MEDIA_ROOT, retain_username=False)
             scraper.scrape()
             for line in request.FILES["text_file"]:
                 username = line.rstrip().decode("utf-8")

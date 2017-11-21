@@ -5,3 +5,30 @@
 .center {
     text-align: center;
 }
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    overflow-wrap: break-word;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 70px;
+    min-height: 100%;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding-bottom: 10;
+    margin-bottom: 0;
+}

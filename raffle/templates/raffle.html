@@ -3,14 +3,36 @@
 {% load static %}
 
 {% block body %}
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel"></h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="modalBody" class="modal-body">
+                    <img id="modalImg" class="img-fluid" src="">
+                </div>
+                <div class="modal-footer">
+                    <h3>#unidaylekesfet</h3>
+                    <button type="button" class="btn btn-success" onclick="run({{ usernames }})">RUN</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div class="card-columns">
             {% for entry in entries %}
                 <div class="card">
                     {% if entry.img_url %}
-                        <img class="card-img-top img-fluid" src="{{ entry.img_url }}" alt="(Image)">
+                        <img id="{{ entry.name }}" class="card-img-top img-fluid" src="{{ entry.img_url }}" alt="(Image)">
                     {% else %}
-                        <img class="card-img-top img-fluid" src="{% static "img/eestecist.jpeg" %}" alt="(Image)">
+                        <img id="{{ entry.name }}" class="card-img-top img-fluid" src="{% static "img/eestecist.jpeg" %}" alt="(Image)">
                     {% endif %}
                     <div class="card-block">
                         <h4 class="card-title">{{ entry.name }}</h4>
@@ -20,4 +42,30 @@
         </div>
     </div>
     <script src="https://app.dialogfeed.com/wc/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <script>
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+        function run(usernames) {
+            $('#myModal').modal('show');
+            var i = 0;
+            var rand = getRandomInt(40, 60);
+            var selected = "";
+            var id = setInterval(change, 100);
+            function change() {
+                if (i == rand) {
+                    clearInterval(id);
+                    $("#exampleModalLabel").html(selected + " is the Winner!");
+                } else {
+                    selected = usernames[Math.floor(Math.random() * usernames.length)];
+                    var img = $("#" + selected).attr("src");
+                    $("#exampleModalLabel").html(selected);
+                    $("#modalImg").attr("src", img);
+                    i++;
+                }
+            }
+        }
+    </script>
 {% endblock %}
