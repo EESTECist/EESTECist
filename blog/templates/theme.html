@@ -23,6 +23,12 @@
                 <li class="nav-item{% if "participants" in request.path %} active{% endif %}">
                     <a class="nav-link" href="{% url "participants" %}">#unidaylekesfet</a>
                 </li>
+		<li class="nav-item">
+                    <a class="nav-link" href="http://uniday.istanbul">Uni-Day '17</a>
+                </li>
+		<li class="nav-item">
+                    <a class="nav-link" href="http://eestec.istanbul">EESTEC LC Istanbul</a>
+                </li>
                 {% if request.user.is_superuser %}
                     <li class="nav-item{% if "upload" in request.path %} active{% endif %}">
                         <a class="nav-link" href="{% url "upload" %}">Upload</a>
