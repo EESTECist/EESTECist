@@ -11,4 +11,4 @@ class EntryForm(forms.ModelForm):
 class TextFileForm(forms.ModelForm):
     class Meta:
         model = models.TextFile
-        fields = ["text_file"]
+        fields = ["text_file", "hashtag"]

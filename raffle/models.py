@@ -11,3 +11,4 @@ class Entry(models.Model):
 
 class TextFile(models.Model):
     text_file = models.FileField()
+    hashtag = models.CharField(max_length=50)
