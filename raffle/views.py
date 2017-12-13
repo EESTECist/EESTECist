@@ -32,7 +32,7 @@ def upload_file(request):
                 try:
                     f = open(MEDIA_ROOT + username + ".json")
                     data = json.load(f)
-                    new = Entry(name=username, img_url=get_hashtag_img_url(data, "unidaylekesfet"))
+                    new = Entry(name=username, img_url=get_hashtag_img_url(data, request.POST["hashtag"]))
                     new.save()
                 except:
                     new = Entry(name=username)

@@ -6,7 +6,7 @@ class Post(models.Model):
     body = models.TextField()
     image = models.ImageField(blank=True)
     date = models.DateField(auto_now_add=True)
-    category = models.ForeignKey("Category")
+    category = models.ForeignKey("Category", models.PROTECT)
 
     def __str__(self):
         return self.title
