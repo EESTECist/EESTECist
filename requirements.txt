@@ -2,3 +2,4 @@ Django
 Pillow
 instagram-scraper
 selenium
+django_rest_framework
