@@ -1,9 +1,10 @@
-from django.conf.urls import url, include
+from django.urls import path, include
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url('^', include('django.contrib.auth.urls')),
-    url(r'^blog/', include("blog.urls")),
-    url(r'^', include("raffle.urls"))
+    path('admin/', admin.site.urls),
+    path('', include('django.contrib.auth.urls')),
+    path('blog/', include("blog.urls")),
+    path('', include("raffle.urls")),
+    path('forum/', include('forum.urls', namespace = 'forum')),
 ]
