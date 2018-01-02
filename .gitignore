@@ -6,3 +6,6 @@ instagram-scraper.log
 media/
 static/
 db.sqlite3
+
+# Static build folder included
+!build/*
