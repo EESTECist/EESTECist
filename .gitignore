@@ -1,11 +1,21 @@
-.idea/
-__pycache__/
+# MacOS
 .DS_Store
-.ftpconfig
-instagram-scraper.log
-media/
-static/
-db.sqlite3
+*.icloud
 
-# Static build folder included
+# IDE
+.idea/
+.ftpconfig
+
+# Python
+__pycache__/
+
+# Django
+db.sqlite3
+static/
+media/
+
+# Extra
+instagram-scraper.log
+
+# Static build folder excluded
 !build/*
