@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bakery',
     'rest_framework',
     'rest_framework.authtoken',
     'blog',
@@ -105,6 +106,11 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+BAKERY_VIEWS = (
+    'blog.views.IndexView',
+    'blog.views.PostView',
+    'blog.views.CategoryView'
+)
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
@@ -125,6 +131,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+BUILD_DIR = os.path.join(BASE_DIR, 'build')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')

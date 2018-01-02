@@ -4,3 +4,6 @@ __pycache__/
 .ftpconfig
 instagram-scraper.log
 media/
+build/
+static/
+db.sqlite3
