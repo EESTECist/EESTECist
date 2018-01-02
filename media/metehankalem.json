@@ -1,0 +1,340 @@
+[
+    {
+        "__typename": "GraphSidecar",
+        "comments_disabled": false,
+        "dimensions": {
+            "height": 1080,
+            "width": 1080
+        },
+        "display_url": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/e35/23596046_290665894672894_8548437829166825472_n.jpg",
+        "edge_media_preview_like": {
+            "count": 158
+        },
+        "edge_media_to_caption": {
+            "edges": [
+                {
+                    "node": {
+                        "text": "Bizimkisi militan bir sevda 🇹🇷🇹🇷🇹🇷 #airsoft"
+                    }
+                }
+            ]
+        },
+        "edge_media_to_comment": {
+            "count": 2
+        },
+        "id": "1651442050865976197",
+        "is_video": false,
+        "owner": {
+            "id": "605668037"
+        },
+        "shortcode": "BbrGcupAlOF",
+        "tags": [
+            "airsoft"
+        ],
+        "taken_at_timestamp": 1511087255,
+        "thumbnail_resources": [
+            {
+                "config_height": 150,
+                "config_width": 150,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s150x150/e35/23596046_290665894672894_8548437829166825472_n.jpg"
+            },
+            {
+                "config_height": 240,
+                "config_width": 240,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s240x240/e35/23596046_290665894672894_8548437829166825472_n.jpg"
+            },
+            {
+                "config_height": 320,
+                "config_width": 320,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s320x320/e35/23596046_290665894672894_8548437829166825472_n.jpg"
+            },
+            {
+                "config_height": 480,
+                "config_width": 480,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s480x480/e35/23596046_290665894672894_8548437829166825472_n.jpg"
+            },
+            {
+                "config_height": 640,
+                "config_width": 640,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s640x640/sh0.08/e35/23596046_290665894672894_8548437829166825472_n.jpg"
+            }
+        ],
+        "thumbnail_src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s640x640/sh0.08/e35/23596046_290665894672894_8548437829166825472_n.jpg",
+        "urls": [
+            "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/e35/23596046_290665894672894_8548437829166825472_n.jpg",
+            "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/e35/23733883_651236471932781_3478953815049240576_n.jpg",
+            "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/e35/23667552_143216686439187_1114074564796612608_n.jpg"
+        ]
+    },
+    {
+        "__typename": "GraphImage",
+        "comments_disabled": false,
+        "dimensions": {
+            "height": 1080,
+            "width": 1080
+        },
+        "display_url": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/e35/22351809_1294525070659482_1112485027465134080_n.jpg",
+        "edge_media_preview_like": {
+            "count": 47
+        },
+        "edge_media_to_caption": {
+            "edges": [
+                {
+                    "node": {
+                        "text": "Öktem Dergisi Fikir Otağının düzenlediği etkinliğe konuşmacı olarak katılacağım. Atatürk'ü ve Atatürk'ün ülküsünü anlamaya çalışacağımız bu etkinlikte sizleride görmekten mutluluk duyarim. #öktem #fikirotağı #öktemdergisi\n\nBenim manevi mirasım bilim ve akıldır.\n\nZaman süratle ilerliyor, milletlerin, toplumların, kişilerin mutluluk ve mutsuzluk anlayışları bile değişiyor. Böyle bir dünyada, asla değişmeyecek hükümler getirdiğini iddia etmek, aklın ve ilmin gelişimini inkâr etmek olur…\n\nBenim Türk milleti için yapmak istediklerim ve başarmaya çalıştıklarım ortadadır. Benden sonra beni benimsemek isteyenler, bu temel eksen üzerinde akıl ve ilmin rehberliğini kabul ederlerse, manevi mirasçılarım olurlar.” MUSTAFA KEMAL ATATÜRK"
+                    }
+                }
+            ]
+        },
+        "edge_media_to_comment": {
+            "count": 0
+        },
+        "id": "1624057800156094506",
+        "is_video": false,
+        "owner": {
+            "id": "605668037"
+        },
+        "shortcode": "BaJz_bxAaAq",
+        "tags": [
+            "öktemdergisi",
+            "fikirotağı",
+            "öktem"
+        ],
+        "taken_at_timestamp": 1507822798,
+        "thumbnail_resources": [
+            {
+                "config_height": 150,
+                "config_width": 150,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s150x150/e35/22351809_1294525070659482_1112485027465134080_n.jpg"
+            },
+            {
+                "config_height": 240,
+                "config_width": 240,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s240x240/e35/22351809_1294525070659482_1112485027465134080_n.jpg"
+            },
+            {
+                "config_height": 320,
+                "config_width": 320,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s320x320/e35/22351809_1294525070659482_1112485027465134080_n.jpg"
+            },
+            {
+                "config_height": 480,
+                "config_width": 480,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s480x480/e35/22351809_1294525070659482_1112485027465134080_n.jpg"
+            },
+            {
+                "config_height": 640,
+                "config_width": 640,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s640x640/sh0.08/e35/22351809_1294525070659482_1112485027465134080_n.jpg"
+            }
+        ],
+        "thumbnail_src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s640x640/sh0.08/e35/22351809_1294525070659482_1112485027465134080_n.jpg",
+        "urls": [
+            "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/e35/22351809_1294525070659482_1112485027465134080_n.jpg"
+        ]
+    },
+    {
+        "__typename": "GraphImage",
+        "comments_disabled": false,
+        "dimensions": {
+            "height": 727,
+            "width": 1080
+        },
+        "display_url": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/e35/22071066_865340520300315_7812834403809230848_n.jpg",
+        "edge_media_preview_like": {
+            "count": 64
+        },
+        "edge_media_to_caption": {
+            "edges": [
+                {
+                    "node": {
+                        "text": "Ne dağlarda açan çiçekler ne kentlerde devleşen öfkeler henüz elveda demediler.. #art #nature #natureart #hope #worldofthephotographer #photography"
+                    }
+                }
+            ]
+        },
+        "edge_media_to_comment": {
+            "count": 0
+        },
+        "id": "1615981572996092646",
+        "is_video": false,
+        "owner": {
+            "id": "605668037"
+        },
+        "shortcode": "BZtHq3GAlLm",
+        "tags": [
+            "photography",
+            "worldofthephotographer",
+            "art",
+            "natureart",
+            "hope",
+            "nature"
+        ],
+        "taken_at_timestamp": 1506860036,
+        "thumbnail_resources": [
+            {
+                "config_height": 150,
+                "config_width": 150,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s150x150/e35/c176.0.727.727/22071066_865340520300315_7812834403809230848_n.jpg"
+            },
+            {
+                "config_height": 240,
+                "config_width": 240,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s240x240/e35/c176.0.727.727/22071066_865340520300315_7812834403809230848_n.jpg"
+            },
+            {
+                "config_height": 320,
+                "config_width": 320,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s320x320/e35/c176.0.727.727/22071066_865340520300315_7812834403809230848_n.jpg"
+            },
+            {
+                "config_height": 480,
+                "config_width": 480,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s480x480/e35/c176.0.727.727/22071066_865340520300315_7812834403809230848_n.jpg"
+            },
+            {
+                "config_height": 640,
+                "config_width": 640,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s640x640/sh0.08/e35/c176.0.727.727/22071066_865340520300315_7812834403809230848_n.jpg"
+            }
+        ],
+        "thumbnail_src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s640x640/sh0.08/e35/c176.0.727.727/22071066_865340520300315_7812834403809230848_n.jpg",
+        "urls": [
+            "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/e35/22071066_865340520300315_7812834403809230848_n.jpg"
+        ]
+    },
+    {
+        "__typename": "GraphImage",
+        "comments_disabled": false,
+        "dimensions": {
+            "height": 1291,
+            "width": 1080
+        },
+        "display_url": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/e35/21984723_494936634211987_1008948329624633344_n.jpg",
+        "edge_media_preview_like": {
+            "count": 132
+        },
+        "edge_media_to_caption": {
+            "edges": [
+                {
+                    "node": {
+                        "text": "Velhasılkelam son senedeyiz🌲 #worldofphotographer  #itu1773 #itümaslak #itü  #itudesonbahar"
+                    }
+                }
+            ]
+        },
+        "edge_media_to_comment": {
+            "count": 0
+        },
+        "id": "1614637273599467313",
+        "is_video": false,
+        "owner": {
+            "id": "605668037"
+        },
+        "shortcode": "BZoWAuuAF8x",
+        "tags": [
+            "itu1773",
+            "itü",
+            "worldofphotographer",
+            "itudesonbahar",
+            "itümaslak"
+        ],
+        "taken_at_timestamp": 1506699783,
+        "thumbnail_resources": [
+            {
+                "config_height": 150,
+                "config_width": 150,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s150x150/e35/c0.105.1080.1080/21984723_494936634211987_1008948329624633344_n.jpg"
+            },
+            {
+                "config_height": 240,
+                "config_width": 240,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s240x240/e35/c0.105.1080.1080/21984723_494936634211987_1008948329624633344_n.jpg"
+            },
+            {
+                "config_height": 320,
+                "config_width": 320,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s320x320/e35/c0.105.1080.1080/21984723_494936634211987_1008948329624633344_n.jpg"
+            },
+            {
+                "config_height": 480,
+                "config_width": 480,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s480x480/e35/c0.105.1080.1080/21984723_494936634211987_1008948329624633344_n.jpg"
+            },
+            {
+                "config_height": 640,
+                "config_width": 640,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s640x640/sh0.08/e35/c0.105.1080.1080/21984723_494936634211987_1008948329624633344_n.jpg"
+            }
+        ],
+        "thumbnail_src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s640x640/sh0.08/e35/c0.105.1080.1080/21984723_494936634211987_1008948329624633344_n.jpg",
+        "urls": [
+            "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/e35/21984723_494936634211987_1008948329624633344_n.jpg"
+        ]
+    },
+    {
+        "__typename": "GraphImage",
+        "comments_disabled": false,
+        "dimensions": {
+            "height": 1080,
+            "width": 1080
+        },
+        "display_url": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/e35/21148956_114432215926341_2823090061019447296_n.jpg",
+        "edge_media_preview_like": {
+            "count": 164
+        },
+        "edge_media_to_caption": {
+            "edges": [
+                {
+                    "node": {
+                        "text": "🌄🌄 #Ybl21"
+                    }
+                }
+            ]
+        },
+        "edge_media_to_comment": {
+            "count": 5
+        },
+        "id": "1590735406331314516",
+        "is_video": false,
+        "owner": {
+            "id": "605668037"
+        },
+        "shortcode": "BYTbWyKA8FU",
+        "tags": [
+            "Ybl21"
+        ],
+        "taken_at_timestamp": 1503850459,
+        "thumbnail_resources": [
+            {
+                "config_height": 150,
+                "config_width": 150,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s150x150/e35/21148956_114432215926341_2823090061019447296_n.jpg"
+            },
+            {
+                "config_height": 240,
+                "config_width": 240,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s240x240/e35/21148956_114432215926341_2823090061019447296_n.jpg"
+            },
+            {
+                "config_height": 320,
+                "config_width": 320,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s320x320/e35/21148956_114432215926341_2823090061019447296_n.jpg"
+            },
+            {
+                "config_height": 480,
+                "config_width": 480,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s480x480/e35/21148956_114432215926341_2823090061019447296_n.jpg"
+            },
+            {
+                "config_height": 640,
+                "config_width": 640,
+                "src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s640x640/sh0.08/e35/21148956_114432215926341_2823090061019447296_n.jpg"
+            }
+        ],
+        "thumbnail_src": "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/s640x640/sh0.08/e35/21148956_114432215926341_2823090061019447296_n.jpg",
+        "urls": [
+            "https://instagram.fsaw1-8.fna.fbcdn.net/t51.2885-15/e35/21148956_114432215926341_2823090061019447296_n.jpg"
+        ]
+    }
+]
