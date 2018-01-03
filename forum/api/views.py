@@ -12,8 +12,8 @@ from rest_framework.status import HTTP_201_CREATED, HTTP_401_UNAUTHORIZED, HTTP_
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 
-from .serializers import UserSerializer, CategorySerializer, PostSerializer
-from forum.models import Post, Category
+from .serializers import UserSerializer, CategorySerializer, PostSerializer, NotificationSerializer
+from forum.models import Post, Category, Permission
 
 @api_view(['POST'])
 def login(request):
@@ -85,7 +85,7 @@ class CategoryDetailAPIView(RetrieveAPIView):
         instance = self.get_object()
         category_serializer = self.get_serializer(instance)
         post_serializer = PostSerializer(instance.post_set.all(), many = True)
-        
+
         return Response({'category': category_serializer.data, 'posts': post_serializer.data})
 
 class CategoryCreateAPIView(CreateAPIView):
@@ -99,3 +99,30 @@ class CreatePostAPIView(CreateAPIView):
     serializer_class = PostSerializer
     permission_classes = (IsAuthenticated, )
     authentication_classes = (SessionAuthentication, TokenAuthentication)
+
+@api_view(['POST'])
+@authentication_classes((SessionAuthentication, TokenAuthentication))
+@permission_classes((IsAuthenticated, ))
+def set_permission(request):
+    logged_in_user_permission = Permission.objects.get(user = request.user)
+    if logged_in_user_permission.is_mod:
+
+        other_user = request.data.get('user')
+        permissions = Permission.objects.get(user = other_user)
+        permissions.update(**requst.data)
+        permissions.save()
+
+    return Response({'error': 'Unauthorized attempt'}, status = HTTP_401_UNAUTHORIZED)
+
+class NotificationListAPIView(ListAPIView):
+    serializer_class = NotificationSerializer
+    queryset = Notification.objects.all()
+    permission_classes = (IsAuthenticated, )
+    authentication_classes = (TokenAuthentication, SessionAuthentication)
+
+    def list(self, request, *args, **kwargs):
+        queryset = self.get_queryset()
+        queryset = queryset.filter(user = get_object_or_404(User, id = kwargs['pk']))
+        serializer = self.get_serializer(queryset, many = True)
+
+        return Response(serializer.data)

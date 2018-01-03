@@ -18,6 +18,7 @@ class Notification(models.Model):
     text = models.CharField(max_length = 280)
     date = models.DateTimeField(auto_now_add = True)
 
+
     class Meta:
         ordering = ('-id', )
 
@@ -28,6 +29,7 @@ class Category(models.Model):
     user = models.ForeignKey(User, on_delete = models.CASCADE, related_name = 'category_user')
     name = models.CharField(max_length = 140)
     date = models.DateTimeField(auto_now_add = True)
+    follower = models.ManyToManyField(User)
 
     class Meta:
         ordering = ('-id', )
