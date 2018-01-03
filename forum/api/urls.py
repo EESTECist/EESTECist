@@ -12,5 +12,5 @@ urlpatterns = [
     path('create_category/', CategoryCreateAPIView.as_view(), name = 'category_create'),
     path('create_post/', CreatePostAPIView.as_view(), name = 'create_post'),
     path('set_permission/', set_permission, name = 'set_permission'),
-    path('get_notifications/<int:id>', NotificationListAPIView.as_view(), name = 'notification_list'),
+    path('get_notifications/<int:pk>', NotificationListAPIView.as_view(), name = 'notification_list'),
 ]
