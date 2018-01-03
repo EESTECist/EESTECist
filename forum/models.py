@@ -18,7 +18,6 @@ class Notification(models.Model):
     text = models.CharField(max_length = 280)
     date = models.DateTimeField(auto_now_add = True)
 
-
     class Meta:
         ordering = ('-id', )
 
@@ -63,7 +62,8 @@ class Post(models.Model):
 
     def save(self, *args, **kwargs):
 
-        new_notification = Notification(user = self.category.user, _from = self.user, text = ' ')
+        text = '{user} created a new post under your {category}'.format(user = self.user, category = self.category)
+        new_notification = Notification(user = self.category.user, _from = self.user, text = text)
         new_notification.save()
 
         super(Post, self).save(*args, **kwargs)
