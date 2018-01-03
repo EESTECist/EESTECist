@@ -58,7 +58,6 @@ class PostSerializer(serializers.ModelSerializer):
 
         return new_post
 
-
 class NotificationSerializer(serializers.ModelSerializer):
     user = UserSerializer()
     _from = UserSerializer()

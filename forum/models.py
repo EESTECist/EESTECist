@@ -28,6 +28,7 @@ class Category(models.Model):
     user = models.ForeignKey(User, on_delete = models.CASCADE, related_name = 'category_user')
     name = models.CharField(max_length = 140)
     date = models.DateTimeField(auto_now_add = True)
+    follower = models.ManyToManyField(User)
 
     class Meta:
         ordering = ('-id', )
@@ -61,7 +62,8 @@ class Post(models.Model):
 
     def save(self, *args, **kwargs):
 
-        new_notification = Notification(user = self.category.user, _from = self.user, text = ' ')
+        text = '{user} created a new post under your {category}'.format(user = self.user, category = self.category)
+        new_notification = Notification(user = self.category.user, _from = self.user, text = text)
         new_notification.save()
 
         super(Post, self).save(*args, **kwargs)
